@@ -18,3 +18,4 @@ config/icon="res://icon.svg"
 [autoload]
 
 CollectionDataRead="*res://DataScripts/collection_data_read.gd"
+ProgressData="res://DataScripts/progress_data.gd"
