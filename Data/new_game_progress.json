@@ -1,0 +1,26 @@
+{
+   "Circle":[
+	  {
+		 "xp":"0",
+		 "unlocked":"0"
+	  }
+   ],
+   "Square":[
+	  {
+		 "xp":"0",
+		 "unlocked":"0"
+	  }
+   ],
+   "Rectangle":[
+	  {
+		 "xp":"0",
+		 "unlocked":"0"
+	  }
+   ],
+   "Triangle":[
+	  {
+		 "xp":"0",
+		 "unlocked":"0"
+	  }
+   ]
+}
