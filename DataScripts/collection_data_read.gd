@@ -36,11 +36,18 @@ func get_specific_data(cardName:String, iterator: int):
 	load_json_data("res://Data/all_cards_data.json")
 	if allCards_data.has(cardName):
 		for item in allCards_data[cardName]:
-			if item["id"] == str(iterator):
-				var name = item["name"]
-				var image = item["image"]
-				var stats = item["stats"][str(iterator)]
-				return stats
+			#if item["stats"] == str(iterator):
+			#print("item id: " + str(item["stats"][str(iterator)]))
+			var name = item["name"]
+			var image = item["image"]
+			var stats = item["stats"][str(iterator)]
+			return stats
+
+func get_sprite_path(cardName: String):
+	load_json_data("res://Data/all_cards_data.json")
+	if allCards_data.has(cardName):
+		for item in allCards_data[cardName]:
+			return item["image"]
 
 
 func get_stats_by_xp(cardName:String, xp: int):
@@ -66,10 +73,10 @@ func save_updates_card_collection(file_path: String) -> void:
 # Funcția pentru actualizarea stats-urilor
 func set_card_slot(cardName: String, slot: String) -> void:
 	#if collection_data.has(cardName):
-	print(collection_data[slot])
+	#print(collection_data[slot])
 	for param in collection_data[slot]:
 		param["name"] = cardName
-	print(collection_data[slot])
+	#print(collection_data[slot])
 
 
 func _ready() -> void:
@@ -83,7 +90,7 @@ func _ready() -> void:
 	allCards_data = load_json_data("res://Data/all_cards_data.json")
 	collection_data = load_json_data("res://Data/collection1.json")
 	
-	set_card_slot("Circle", "1")
-	save_updates_card_collection("res://Data/collection1.json")
+	#set_card_slot("Circle", "1")
+	#save_updates_card_collection("res://Data/collection1.json")
 	
 	

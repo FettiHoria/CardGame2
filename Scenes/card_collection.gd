@@ -8,14 +8,12 @@ extends Node2D
 
 
 func setname():
-	print("wtf")
 	self.name_label = "bhuivjhjvh"
 
-func card_assemble(atk: String, hlt: String, lvl: String, name: String, img: String) -> void:
-	self.position.x = 100
-	self.position.y = 200
-	print("atk: " + atk)
-	print("img: " + img)
+
+func card_assemble(atk: String, hlt: String, lvl: String, name: String, img: String, pos_x: int, pos_y: int) -> void:
+	self.position.x = pos_x
+	self.position.y = pos_y
 	self.atk_label.text = "" + str(atk)
 	self.hlt_label.text = str(hlt)
 	self.lvl_label.text = str(lvl)
@@ -24,5 +22,4 @@ func card_assemble(atk: String, hlt: String, lvl: String, name: String, img: Str
 
 
 func _ready():
-	#atk_label.text = "hjio"
-	print("steaua")
+	pass
