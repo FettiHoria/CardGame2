@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvrrb66xybcx5"]
+
+[ext_resource type="Script" path="res://Collection/Slots/slot_1.gd" id="1_udo0u"]
+[ext_resource type="Texture2D" uid="uid://c27205y3xo3ca" path="res://images/emptySpot.png" id="2_2po1e"]
+
+[node name="Slot" type="Node2D"]
+script = ExtResource("1_udo0u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_2po1e")
