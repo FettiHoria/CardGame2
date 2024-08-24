@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cg26wo0ym7c5s"]
+
+[ext_resource type="Script" path="res://Collection/collection.gd" id="1_l1jn5"]
+[ext_resource type="PackedScene" uid="uid://bvrrb66xybcx5" path="res://Collection/Slots/slot.tscn" id="2_7krqk"]
+[ext_resource type="Resource" uid="uid://dqakb7eet25d4" path="res://Resources/collection_slot.tres" id="3_twect"]
+
+[node name="collection" type="Node2D"]
+script = ExtResource("1_l1jn5")
+
+[node name="Slot1" parent="." instance=ExtResource("2_7krqk")]
+position = Vector2(180, 212)
+slot_col_res = ExtResource("3_twect")
+nr_slot = "1"
+
+[node name="Slot2" parent="." instance=ExtResource("2_7krqk")]
+position = Vector2(323, 218)
+slot_col_res = ExtResource("3_twect")
+nr_slot = "2"
+
+[node name="Slot3" parent="." instance=ExtResource("2_7krqk")]
+position = Vector2(467, 215)
+slot_col_res = ExtResource("3_twect")
+nr_slot = "3"
+
+[node name="Slot4" parent="." instance=ExtResource("2_7krqk")]
+position = Vector2(636, 215)
+slot_col_res = ExtResource("3_twect")
+nr_slot = "4"
