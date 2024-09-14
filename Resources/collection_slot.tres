@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Collection_Slot" load_steps=2 format=3 uid="uid://dqakb7eet25d4"]
+
+[ext_resource type="Script" path="res://Resources/slot_script.gd" id="1_iwsne"]
+
+[resource]
+script = ExtResource("1_iwsne")
+slot_nr = "1"
