@@ -43,3 +43,7 @@ func _ready():
 		add_child(collection_list[i])
 		collection_list[i].card_assemble(str(stats["attack"]), str(stats["health"]), str(stats["xp_max"]), str(card), str(sprite_path), i*170, 400)
 		i += 1
+
+
+func _on_home_button_button_up() -> void:
+	get_tree().change_scene_to_file("res://Scenes/menu.tscn")

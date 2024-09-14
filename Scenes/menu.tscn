@@ -1,0 +1,40 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3oyiypftony7"]
+
+[ext_resource type="Script" path="res://Scenes/menu.gd" id="1_4t85s"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_4t85s")
+
+[node name="Map" type="Button" parent="."]
+offset_left = 360.0
+offset_top = 57.0
+offset_right = 527.0
+offset_bottom = 123.0
+text = "Map
+"
+
+[node name="Collection" type="Button" parent="."]
+offset_left = 366.0
+offset_top = 157.0
+offset_right = 528.0
+offset_bottom = 228.0
+text = "Collection
+"
+
+[node name="Options" type="Button" parent="."]
+offset_left = 368.0
+offset_top = 257.0
+offset_right = 530.0
+offset_bottom = 322.0
+text = "Options"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 368.0
+offset_top = 343.0
+offset_right = 533.0
+offset_bottom = 408.0
+text = "Quit"
+
+[connection signal="button_up" from="Map" to="." method="_on_map_button_up"]
+[connection signal="button_up" from="Collection" to="." method="_on_collection_button_up"]
+[connection signal="button_up" from="Quit" to="." method="_on_quit_button_up"]
