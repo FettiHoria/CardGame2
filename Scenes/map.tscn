@@ -12,4 +12,12 @@ offset_right = 1123.0
 offset_bottom = 627.0
 text = "Home"
 
+[node name="Button2" type="Button" parent="."]
+offset_left = 157.0
+offset_top = 448.0
+offset_right = 263.0
+offset_bottom = 537.0
+text = "1"
+
 [connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="button_up" from="Button2" to="." method="_on_button_2_button_up"]
