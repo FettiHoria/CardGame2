@@ -1,8 +1,6 @@
 extends Node
 
-
 var card_scene_path = "res://Collection/card_collection.tscn"
-
 
 var collection_list = {}
 
