@@ -6,33 +6,33 @@
 script = ExtResource("1_4t85s")
 
 [node name="Map" type="Button" parent="."]
-offset_left = 360.0
-offset_top = 57.0
-offset_right = 527.0
-offset_bottom = 123.0
+offset_left = 450.0
+offset_top = 140.0
+offset_right = 610.0
+offset_bottom = 212.0
 text = "Map
 "
 
 [node name="Collection" type="Button" parent="."]
-offset_left = 366.0
-offset_top = 157.0
-offset_right = 528.0
-offset_bottom = 228.0
+offset_left = 450.0
+offset_top = 236.0
+offset_right = 610.0
+offset_bottom = 300.0
 text = "Collection
 "
 
 [node name="Options" type="Button" parent="."]
-offset_left = 368.0
-offset_top = 257.0
-offset_right = 530.0
-offset_bottom = 322.0
+offset_left = 450.0
+offset_top = 332.0
+offset_right = 610.0
+offset_bottom = 396.0
 text = "Options"
 
 [node name="Quit" type="Button" parent="."]
-offset_left = 368.0
-offset_top = 343.0
-offset_right = 533.0
-offset_bottom = 408.0
+offset_left = 450.0
+offset_top = 420.0
+offset_right = 610.0
+offset_bottom = 484.0
 text = "Quit"
 
 [connection signal="button_up" from="Map" to="." method="_on_map_button_up"]

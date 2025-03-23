@@ -11,9 +11,15 @@ extends Node2D
 
 
 func _ready() -> void:
+	#self.hlt_label.text = '1'
 	pass
 	#print(slot_col_res.slot_nr)
 	#print(nr_slot)
+
+func _process(delta: float) -> void:
+	if self.hlt_label != null:
+		if int(self.hlt_label.text) <= 0:
+			self.queue_free()
 
 func setCard(atk: String, hlt: String, lvl: String, name: String, img: String):
 	#print(nr_slot)
@@ -22,6 +28,16 @@ func setCard(atk: String, hlt: String, lvl: String, name: String, img: String):
 	self.lvl_label.text = str(lvl)
 	self.name_label.text = str(name)
 	self.sprite.texture = load(str(img))
+
+
+func setHealth(hlt: String):
+	self.hlt_label.text = str(hlt)
+
+func takeDamage(dmg: String):
+	self.hlt_label.text = str(int(self.hlt_label.text) - int(dmg))
+
+func getAttack():
+	return self.atk_label.text
 
 func _on_area_2d_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	pass
